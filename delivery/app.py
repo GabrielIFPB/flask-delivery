@@ -1,6 +1,6 @@
 
-import views
 from flask import Flask
+from delivery import views
 
 
 def create_app() -> Flask:
