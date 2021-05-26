@@ -9,3 +9,7 @@ def test_config_is_loaded(config):
 
 def test_app_index(client):
 	assert client.get('/').status_code == 200
+
+
+def test_app_about(client):
+	assert client.get('/about').status_code == 200
