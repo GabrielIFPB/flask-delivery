@@ -1,9 +1,10 @@
 
 from flask import Flask
-from delivery import views
+
+from delivery.ext import site
 
 
 def create_app() -> Flask:
 	app = Flask(__name__)
-	views.init_app(app=app)
+	site.init_app(app)
 	return app
