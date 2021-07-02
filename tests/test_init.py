@@ -12,4 +12,4 @@ def test_app_index(client):
 
 
 def test_app_about(client):
-	assert client.get('/about').status_code == 404
+	assert client.get('/about').status_code == 200
