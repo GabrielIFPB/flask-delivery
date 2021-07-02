@@ -11,13 +11,13 @@ def read(filename):
 
 
 setup(
-	name='delivery',
-	version='0.1.0',    # major, minor, patch
-	description='System delivery app',
-	packages=find_packages(exclude='venv*'),
+	name="delivery",
+	version="0.1.0",    # major, minor, patch
+	description="System delivery app",
+	packages=find_packages(exclude="venv*"),
 	include_package_data=True,
-	install_requires=read('requirements.txt'),
+	install_requires=read("requirements.txt"),
 	extras_require={
-		'dev': read('requirements-dev.txt')
+		"dev": read("requirements-dev.txt")
 	}
 )
